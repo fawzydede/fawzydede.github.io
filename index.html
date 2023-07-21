@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/res/main.css">
+  <title>Dede Fawzy</title>
+</head>
+<body>
+    <!-- modal component-->
+
+      <div class="hidden overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none justify-center items-center" id="contact-modal">
+      <div class="fixed left-0 top-0 flex h-full w-full items-center justify-center bg-black bg-opacity-50 py-10">
+        <div class="max-h-full w-full max-w-xl overflow-y-auto sm:rounded-2xl bg-white animate-fade-up animate-once animate-duration-1000 animate-delay-0 animate-ease-out animate-normal animate-fill-forwards">
+          <div class="w-full">
+            <div class="m-8 my-20 max-w-[400px] mx-auto">
+              <div class="mb-8">
+                <h1 class="mb-4 text-3xl font-extrabold">Mari bekerjasama</h1>
+                <p class="text-gray-600">Terimakasih telah mempertimbangkan saya untuk bergabung dengan anda.</p>
+              </div>
+              <div class="space-y-4">
+                  <button class="p-3 bg-white border rounded-full w-full font-semibold" type="button" onclick="location.href='https://wa.me/6289613709370'"><img src="/res/Digital_Inline_Green.svg" class="h-5 mx-auto inline"></button>
+                  <button class="p-3 bg-white border rounded-full w-full font-semibold" type="button" onclick="location.href='mailto:dede.fawzy@gmail.com'"><img src="/res/Gmail-inline-text.png" class="h-5 mx-auto inline"></button>
+                  <button class="p-3 bg-black rounded-full text-white w-full font-semibold" type="button" onclick="toggleModal('contact-modal')">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!-- main component -->
+<div class="w-full">
+    <div class="flex bg-white h-screen">
+        <div class="flex items-center text-center lg:text-left px-8 md:px-12 lg:w-1/2">
+            <div class="animate-fade-right animate-once animate-duration-1000 animate-delay-0 animate-ease-linear animate-normal animate-fill-backwards">
+                <h2 class="text-3xl font-semibold text-gray-800 md:text-4xl">Dede Ahmad <span class="text-amber-500">Fawzy</span></h2>
+                <p class="mt-2 text-sm text-gray-500 md:text-base">Saya merupakan pribadi dengan pengalaman kerja yang bisa diperhitungkan untuk menjadi pertimbangan recruitment. Bisa bekerja dalam tim, dibawah tekanan dan target. Familiar dengan Windows & Linux. Terbiasa dengan program Microsoft Office.  Tamatan SMA, pernah bekerja dibagian produksi dan administrasi. Memiliki ketertarikan terhadap dunia Web Development.</p>
+                <div class="flex justify-center lg:justify-start mt-6">
+                    <a class="px-4 py-3 bg-gray-900 text-gray-200 text-xs font-semibold rounded hover:bg-gray-800 uppercase" href="#" onclick="toggleModal('contact-modal')">Hire me</a>
+                    <a class="mx-4 px-4 py-3 bg-gray-300 text-gray-900 text-xs font-semibold rounded hover:bg-gray-400 uppercase" href="#">Know more about me</a>
+                </div>
+            </div>
+        </div>
+        <div class="hidden lg:block lg:w-1/2" style="clip-path:polygon(10% 0, 100% 0%, 100% 100%, 0 100%)">
+            <div class="h-full object-cover" style="background-image: url(https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1352&q=80)">
+                <div class="h-full bg-black opacity-25"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+<script>
+    function toggleModal(modalID) {
+      document.getElementById(modalID).classList.toggle("hidden");
+      document.getElementById(modalID + "-backdrop").classList.toggle("hidden");
+      document.getElementById(modalID).classList.toggle("flex");
+      document.getElementById(modalID + "-backdrop").classList.toggle("flex");
+    }
+  </script>
+</html>
