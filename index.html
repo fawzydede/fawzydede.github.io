@@ -34,7 +34,7 @@
 <div class="w-full sm-bg">
     <div class="flex bg-white bg-opacity-90 lg:bg-opacity-100 h-screen">
         <div class="flex flex-col items-center justify-center text-center lg:text-left px-8 md:px-12 lg:w-1/2">
-            <img class="w-60 h-60 rounded-full mx-auto mb-8 border-4" src="/res/me.png" alt="Profile picture">
+            <img class="w-60 h-60 rounded-full mx-auto mb-8 border-4 animate-fade-down animate-once animate-duration-1000 animate-delay-0 animate-ease-out animate-normal animate-fill-backwards" src="/res/me.png" alt="Profile picture">
             <div class="animate-fade-right animate-once animate-duration-1000 animate-delay-0 animate-ease-linear animate-normal animate-fill-backwards">
                 <h2 class="text-3xl font-semibold text-gray-800 md:text-4xl">Dede Ahmad <span class="text-amber-500">Fawzy</span></h2>
                 <p class="mt-2 text-sm text-gray-500 md:text-base">I am a person with work experience that can be taken into consideration for recruitment. Can work in a team, under pressure and target. Familiar with Windows & Linux also Microsoft Office programs. Graduated from high school, experienced in production and administration position. Have an interest in the world of Web Development.</p>
@@ -53,27 +53,27 @@
 </div>
 
 <div class="flex items-center justify-center flex-col bg-[#E5E5E5] min-h-screen">
-  <p class="mb-16 text-2xl">EXPERIENCE</p>
+  <p class="mb-16 mt-16 text-2xl font-bold">EXPERIENCES</p>
   <!-- main card -->
-  <div class="bg-[#F4F5FA] p-10 rounded-xl">
+  <div class="bg-[#F4F5FA] p-10 rounded-xl max-w-sm sm:max-w-full">
       <!-- headers content-->
       <div class="flex flex-col justify-center items-center text-center">
           <div class="max-w-sm font-bold font-sans">
-              PT. ARJUNA KESATRIA SEJATI
+              PT. ARJUNA KESATRIA SEJATI<br>General Contractor & Property
           </div>
           <div class="font-light max-w-lg mt-5 text-sm">
-              Property company. I work here since Feb 2019 - Jul 2023
+              Feb 2019 - Jul 2023<br>These are the projects i work for
           </div>
       </div>
 
       <!-- subscriptions -->
       <div
-          class="flex flex-col md:flex-row space-x-0 md:space-x-8 space-y-12  md:space-y-0 justify-center items-center mt-10">
+          class="flex flex-col md:flex-row space-x-0 md:space-x-8 space-y-12 md:space-y-0 justify-center items-center mt-10">
           <div class="bg-[#FFFBEC] rounded-xl">
-              <div class="flex flex-col p-8 rounded-xl bg-white shadow-xl translate-x-4 translate-y-4 w-96 md:w-auto">
+              <div class="flex flex-col p-8 rounded-xl bg-white shadow-xl translate-x-4 translate-y-4 w-auto max-w-96">
                   <img src="/res/vlc.png" class="w-20">
                   <div class="mt-3 font-semibold text-lg">Villa Lestari Cikarang</div>
-                  <div class="text-sm font-light">General Admin & Data entry</div>
+                  <div class="text-sm font-light w-60 md:w-auto">General Admin & Data entry</div>
 
                   <button class="bg-[#F4F5FA] px-4 py-3 rounded-full  border border-[#F0F0F6] shadow-xl mt-4" type="button" onclick="window.open('https://sikumbang.tapera.go.id/lokasi-perumahan/CKR2120082020T013','_blank')">
                       Visit page
@@ -82,7 +82,7 @@
           </div>
 
           <div class="bg-[#F9ECFF] rounded-xl">
-              <div class="flex flex-col p-8 rounded-xl bg-white shadow-xl translate-x-4 translate-y-4 w-96 md:w-auto">
+              <div class="flex flex-col p-8 rounded-xl bg-white shadow-xl translate-x-4 translate-y-4 w-auto max-w-96">
                   <img src="/res/vlc.png" class="w-20">
                   <div class="mt-3 font-semibold text-lg">Villa Lestari Cikarang 2</div>
                   <div class="text-sm font-light w-60 md:w-auto">General Admin & Data entry</div>
@@ -95,7 +95,7 @@
 
 
           <div class="bg-[#ECEEFF] rounded-xl">
-              <div class="flex flex-col p-8 rounded-xl bg-white shadow-xl translate-x-4 translate-y-4 w-96 md:w-auto">
+              <div class="flex flex-col p-8 rounded-xl bg-white shadow-xl translate-x-4 translate-y-4 w-auto max-w-96">
                 <img src="/res/gmi.png" class="w-10">
                   <div class="mt-3 font-semibold text-lg">Griya Mulya Indah</div>
                   <div class="text-sm font-light w-60 md:w-auto">General Admin & Data entry</div>   
@@ -107,8 +107,26 @@
           </div>
       </div>
 
+      <div class="hidden animate-fade-down animate-once animate-duration-500 animate-delay-0 animate-ease-out animate-normal animate-fill-backwards" id="more-toggle">
+      <div class="flex flex-col justify-center items-center text-center mt-16">
+        <div class="max-w-sm font-bold font-sans">
+            PT. ENERGI INDOGAS NUSANTARA<br>Industrial Gases Specialist
+        </div>
+        <div class="font-light max-w-lg mt-5 text-sm">
+            Jan 2015 - Aug 2016<br>Warehouse Admin
+        </div>
+        <div class="max-w-sm font-bold font-sans mt-10">
+          PT. INDOFOOD CBP SUKSES MAKMUR Tbk.<br>Noodle Division
+      </div>
+      <div class="font-light max-w-lg mt-5 text-sm">
+          Mar 2014 - Jan 2015<br>Helper - Finish Good
+      </div>
+      </div>
+
+    </div>
+
       <div class="flex justify-center">
-          <button class="mt-12 bg-slate-900 text-white px-4 rounded-full py-3">Button pemanis</button>
+          <button class="mt-12 bg-slate-900 text-white px-4 rounded-full py-3" onclick="toggleModal('more-toggle')">Show/Hide</button>
       </div>
   </div>
 </div>
