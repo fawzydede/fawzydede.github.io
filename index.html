@@ -9,6 +9,34 @@
   </head>
   <body>
     <!-- modal component-->
+    <div class="fixed left-0 top-0 flex h-auto w-full justify-center items-start mt-6 z-50" id="popup-modal">
+    <div 
+        class="w-full max-w-3xl flex flex-col md:flex-row items-start md:items-center justify-between gap-8 bg-slate-600 p-5 rounded-xl animate-fade-up animate-once animate-duration-500 animate-delay-0 animate-ease-out animate-normal animate-fill-forwards"
+      >
+      
+        <div>
+          <h4 class="text-white font-bold text-base">Info:</h4>
+          <p class="text-white text-xs mt-2 md:mt-1">
+            Are you looking for a subsidized house with a cheap down payment and installments of less than 1.5 million rupiah?
+          </p>
+        </div>
+        <div class="flex">
+          <button
+            class="text-xs text-white border-[1px] py-2 px-5 rounded-tl-2xl rounded-bl-2xl hover:bg-white hover:text-slate-600"
+            type="button"
+            onclick="location.href='property/'"
+          >
+            Explore
+          </button>
+          <button
+            class="text-xs text-white border-[1px] py-2 px-5 rounded-tr-2xl rounded-br-2xl hover:bg-white hover:text-slate-600"
+            onclick="toggleModal('popup-modal')"
+          >
+            Close
+          </button>
+        </div>
+      </div>
+      </div>
 
     <div
       class="hidden overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none justify-center items-center"
@@ -113,15 +141,13 @@
               </div>
             </div>
             <p class="text-sm text-gray-500 md:text-base">
-              High school graduated. Familiar with Windows & Linux also
-              Microsoft Office programs. Have an interest in the world of Web
-              Development and I’m looking forward to work with you.
+              Dedicated and accomplished professional with years of experience in my respective industry. Committed to continuous learning and professional growth, I strive to bring my expertise to a dynamic and forward-thinking team. Let's connect and explore how we can collaborate for mutual success.
             </p>
             <div
               class="flex justify-center lg:justify-start mt-6 space-x-2 sm:space-x-4"
             >
               <a
-                class="px-4 py-3 bg-gray-900 text-gray-200 text-xs font-semibold rounded hover:bg-gray-800 uppercase"
+                class="px-4 py-3 bg-gradient-to-r from-orange-600 via-purple-600 to-sky-400 animate-gradient text-gray-200 text-xs font-semibold rounded uppercase"
                 href="#"
                 onclick="toggleModal('contact-modal')"
                 >Hire me</a
